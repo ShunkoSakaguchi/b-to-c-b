@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0ex;
+    font-family: 'Poppins', sans-serif;
+ 
+    
+}
+
+body {
+    background-color: #ece5da;
+    text-align: center;
+}
+
+.b-to-c1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(https://cf.ltkcdn.net/dying/images/orig/267821-1600x1030-why-feeling-guilty-is-normal-when-experiencing-grief.jpg);
+    background-size: cover;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.b-to-c1::after {
+    
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgb(0, 0, 0);
+        opacity: 0.2;
+        z-index: 30000;    
+}
+
+.text1 {
+    position: relative;
+    text-align: center;
+    font-size: 55px;
+    z-index: 100000000;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 5em;
+}
+
+.text2 {
+    position: relative;
+    text-align: center;
+    font-size: 55px;
+    z-index: 1000000;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 0em;
+}
+
+.text3 {
+    position: relative;
+    text-align: center;
+    font-size: 55px;
+    z-index: 1000000;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 5em;
+}
+
+  .text{
+    line-height: 0em;
+    margin-top: 0px;
+    font-family: Cabin;
+    letter-spacing: 12px;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-indent: 12px;
+    animation: colorText 5s ease-out infinite,
+               nudgeText 5s ease-out infinite;
+  }
+  
+  /* Animations */
+  @keyframes colorSlide{
+    0% {
+      background-position: 0% 100%;
+    }
+    20% {
+      background-position: 0% 0%;
+    }
+    21% {
+      background-color: #4e5559;
+    }
+    29.99% {
+      background-color: #ffffff;
+      background-position: 0% 0%;
+    }
+    30% {
+      background-color: #4e5559;
+      background-position: 0% 100%;
+
+    }
+    50% {
+      background-position: 0% 0%;
+    }
+    51% {
+      background-color: #4e5559;
+    }
+    59% {
+      background-color: #ffffff;
+      background-position: 0% 0%;
+    }
+    60% {
+      background-color: #4e5559;
+      background-position: 0% 100%;
+    }
+    80% {
+      background-position: 0% 0%;
+    }
+    81% {
+      background-color: #4e5559;
+    }
+    90%, 100% {
+      background-color: #ffffff;
+    }
+  }
+  
+  @keyframes colorText{
+    21% {
+      color: #4e5559;
+    }
+    30% {
+      color: #ffffff;
+    }
+    51% {
+      color: #4e5559;
+    }
+    60% {
+      color: #ffffff;
+    }
+    81% {
+      color: #4e5559;
+    }
+    90% {
+      color: #ffffff;
+    }
+  } 
+  
+  @keyframes trackBallSlide{
+    0%{
+      opacity: 1;
+      transform: scale(1) translateY(-20px);
+    }
+    6%{
+      opacity: 1;
+      transform: scale(0.9) translateY(5px);
+    }
+    14%{
+      opacity: 0;
+      transform: scale(0.4) translateY(40px);
+    }
+    15%, 19%{
+      opacity: 0;
+      transform: scale(0.4) translateY(-20px);
+    }
+    28%, 29.99%{
+      opacity: 1;
+      transform: scale(1) translateY(-20px);
+    }
+    30%{
+      opacity: 1;
+      transform: scale(1) translateY(-20px);
+    }
+    36%{
+      opacity: 1;
+      transform: scale(0.9) translateY(5px);
+    }
+    44%{
+      opacity: 0;
+      transform: scale(0.4) translateY(40px);
+    }
+    45%, 49%{
+      opacity: 0;
+      transform: scale(0.4) translateY(-20px);
+    }
+    58%, 59.99%{
+      opacity: 1;
+      transform: scale(1) translateY(-20px);
+    }
+    60%{
+      opacity: 1;
+      transform: scale(0.9) translateY(-20px);
+    }
+    66%{
+      opacity: 1;
+      transform: scale(0.9) translateY(5px);
+    }
+    74%{
+      opacity: 0;
+      transform: scale(0.4) translateY(40px);
+    }
+    75%, 79%{
+      opacity: 0;
+      transform: scale(0.4) translateY(-20px);
+    }
+    88%, 100%{
+      opacity: 1;
+      transform: scale(1) translateY(-20px);
+    }
+  }
+  @keyframes nudgeMouse{
+    0%{
+      transform: translateY(0);
+    }
+    20%{
+      transform: translateY(8px);
+    }
+    30%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(8px);
+    }
+    60%{
+      transform: translateY(0);
+    }
+    80%{
+      transform: translateY(8px);
+    }
+    90%{
+      transform: translateY(0);
+    }
+  }
+  @keyframes nudgeText {
+    0%{
+      transform: translateY(0);
+    }
+    20%{
+      transform: translateY(2px);
+    }
+    30%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(2px);
+    }
+    60%{
+      transform: translateY(0);
+    }
+    80%{
+      transform: translateY(2px);
+    }
+    90%{
+      transform: translateY(0);
+    }
+  }
+
+  
+.b-to-c2 {
+    line-height: 0em;
+    background-color: black;
+    min-height: 80vh;
+    /* background-image: url(https://www.noaa.gov/sites/default/files/styles/landscape_width_1275/public/legacy/image/2019/Jun/PHOTO-dark%20and%20stormy%20cloudscape-istock-1125x534-Landscape.jpg); */
+    background-size: cover;
+}
+
+
+.text4 {
+    position: relative;
+    text-align: center;
+    font-size: 95px;
+    z-index: 100000000;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 6em;
+    font-weight: 900;
+}
+
+.b-to-c3 {
+    line-height: 0em;
+    background-image: url(https://ychef.files.bbci.co.uk/976x549/p0c8hskt.jpg);
+    background-color: rgb(0, 0, 0);
+    min-height: 85vh;
+    opacity: 0.8;
+    background-size: cover;
+    width: 100%;
+	height: 500px;
+	background-color:rgba(0, 0, 0, 0);
+	background-blend-mode:lighten;
+	font-size: 32px;
+	text-align: center;
+	line-height: 500px
+}
+
+
+
+.text5 {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: 10000000;
+    line-height: 3em;
+    font-size: 95px;
+    font-weight: 900;
+    -webkit-text-stroke: 2px #000;
+}
+
+.text51 {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: 10000000;
+    line-height: 3em;
+    font-size: 80px;
+    font-weight: 900;
+    -webkit-text-stroke: 2px #000;
+}
+
+
+.b-to-c4 {
+    background-color: #696969;
+    min-height: 100vh;
+}
+
+.text6{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: 10000000;
+    line-height: 2em;
+    font-size: 85px;
+}
+
+h2 {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: 100000000;
+    font-size: 45px;
+}
+
+.text7 {
+    position: relative;
+    line-height: 5em;
+    left: 50px;
+    font-size: 85px;
+    float: left;
+    line-height: 0em;
+    border-radius: ;
+}
+
+.setting {
+    min-height: 120vh;
+    text-align: center;
+}
+
+.cost{
+    width: 60%;
+    border-collapse: collapse; 
+    margin: 105px auto;
+    line-height: 55px;
+    border: 4px solid #000;
+  }
+  
+  table tr{
+    border-bottom: solid 2px white;
+  }
+  
+  table tr:last-child{
+    border-bottom: none;
+  }
+  
+  table th{
+    position: relative;
+    text-align: left;
+    width: 30%;
+    background-color: #52c2d0;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  table th:after{
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top:calc(50% - 10px);
+    right:-10px;
+    border-left: 10px solid #52c2d0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  
+  table td{
+    text-align: left;
+    width: 70%;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px 0;
+    font-size: 25px;
+  }
+
+  h3 {
+    /* margin: 20px; */
+    font-family: "Paytone One";
+    color: #202020;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+  }
+  
+  h3 span {
+    display: block;
+    margin: 11px 0 17px 0;
+    font-size: 80px;
+    line-height: 80px;
+    color: #f1ebe5;
+    text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+    letter-spacing: -4px;
+  }
+
+.text10{
+   z-index: 1000000000;
+   font-weight: 900;
+   font-size: 55px;
+    align-items: center;
+    color: #000;
+    border: 8px solid #000;
+    border-radius: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-bottom-left-radius: 60px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 60px;
+    justify-content: space-evenly;
+    margin: 25px;
+}
+
